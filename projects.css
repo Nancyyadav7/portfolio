@@ -1,0 +1,233 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    background-color: black;
+}
+
+.sidebar {
+    z-index: 2;
+    font-family: 'Noto Serif', serif;
+    background-color: blanchedalmond;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+.sidebar nav
+{
+    padding: 60px 30px 0px 30px;
+}
+.sidebar nav li
+{
+    list-style: none;
+    font-size: 16px;
+    padding: 20px 0px;
+}
+
+.sidebar nav li a
+{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:black;
+    width: 7.5rem;
+    padding: 1rem 1rem;
+    background-color: rgb(255, 204, 128);
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.sidebar nav li a:hover
+{
+    background-color: rgb(250, 184, 83);
+    /* color: rgb(255, 204, 128); */
+}
+.sidebar nav li a:active
+{
+    transform: translateY(3px);
+}
+.sidebargo
+{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.hamburger
+{
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    top:10px;
+    left: 10px;
+}
+
+.ham
+{
+    margin-left: 6px;
+    margin-top: 6px;
+}
+.hamburger .ham{
+    filter: invert();
+}
+
+.cross
+{
+    margin-left: 176px;
+    margin-top: 4px;
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+    padding-top: 20px;
+}
+.project_info
+{
+    padding: 0 2px;
+    padding-top: 8px;
+    font-family: 'Arvo', serif;
+    margin: 10px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: black; */
+}
+
+
+.project_heading
+{
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+    margin-top: 15px ;
+    font-size: 30px;
+    text-align: center;
+}
+
+.detailss_1
+{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight:bolder;
+    /* color: aliceblue; */
+}
+
+.detailss_2
+{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    /* color: aliceblue; */
+}
+
+/* .project_btn button
+{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color:rgb(250, 184, 83);
+    font-weight: bold;
+    font-size: 10px;
+    margin:10px;
+    margin: 0 3px;
+    cursor: pointer;
+    /* border-color: black; */
+    /* box-shadow: 2px 2px white; */
+/* }  */
+
+/* .project_btn button:hover
+{
+    background-color: white;
+    color:rgb(250, 184, 83);
+} */
+
+/* .project_info a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.project_btn
+{
+    margin: 5px 0px;
+} */
+
+/* .main
+{
+    background-color: black;
+}  */
+.box
+{
+    position: relative;
+    /* margin: 10% auto 0; */
+    padding: 5px;
+    margin: 80px 20px;
+    width: 235px;
+    height: 300px;
+    /* background: linear-gradient(0deg,rgb(101, 101, 101),rgb(177, 176, 176)); */
+    background: linear-gradient(0deg,rgb(118, 118, 118),rgb(230, 226, 226));
+
+    /* z-index: 4; */
+    /* background-color: aqua; */
+}
+.box:hover{
+    margin: 83px 17px 77px 23px;
+    /* box-shadow: inset -5px -5px 15px rgba(4, 67, 227, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(4, 67, 227, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5); */
+    /* transform:rotate(20deg); */
+    background: linear-gradient(0deg,rgb(210, 210, 210),rgb(232, 231, 231));
+    
+    /* background: linear-gradient(0deg,rgb(118, 118, 118),rgb(230, 226, 226)); */
+}
+.glow::before,.glow::after
+{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top:-2px;
+    background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66,#00ffff,#ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    width:calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -4; 
+    animation: animate 20s linear infinite;
+}
+
+
+
+@keyframes animate
+{
+
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 400% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+.glow::after
+{
+    filter: blur(40px);
+    opacity: 0.99;
+}
+

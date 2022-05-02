@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    font-family: 'Noto Serif', serif;
+    background-color: blanchedalmond;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+.sidebar nav
+{
+    padding: 60px 30px 0px 30px;
+}
+.sidebar nav li
+{
+    list-style: none;
+    font-size: 16px;
+    padding: 20px 0px;
+}
+
+.sidebar nav li a
+{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:black;
+    width: 7.5rem;
+    padding: 1rem 1rem;
+    background-color: rgb(255, 204, 128);
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.sidebar nav li a:hover
+{
+    background-color: rgb(250, 184, 83);
+    /* color: rgb(255, 204, 128); */
+}
+.sidebar nav li a:active
+{
+    transform: translateY(3px);
+}
+
+.main {
+    /* background-color: rgb(164, 228, 228); */
+    height: 100vh;
+    width: 85vw;        
+}
+.main::before{
+    content: "";
+    position: absolute;
+    background:url("./f_bg.jpg") center center/cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.27;
+    z-index: -1;
+}
+.container
+{
+    display:flex;
+}
+.infocontainer
+{
+    /* background-color: #00000054; */
+    height: 70vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.my_info
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:35px;
+    font-family: 'Arvo', serif;
+}
+.my_pic
+{
+    margin: 0px 30px 0px 0px;
+}
+.my_pic img
+{
+    width: 310px;
+    margin-top: -177px;
+    margin-left:40px;
+}
+
+.hello
+{
+
+    font-size: 60px;
+}
+.name
+{
+    font-size: 45px;
+    font-weight: bold;
+}
+.about
+{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.moreabout
+{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.buttons
+{
+    margin-top: 30px;
+}
+.buttons button 
+{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color:rgb(250, 184, 83);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    /* border-color: black; */
+    box-shadow: 2px 2px black;
+} 
+
+.buttons button:hover
+{
+    background-color: white;
+    color:rgb(250, 184, 83);
+}
+
+.buttons button:active
+{
+    transform: translateY(3px);
+}
+
+
+.sidebargo
+{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.hamburger
+{
+    position: absolute;
+    cursor: pointer;
+    top:10px;
+    left: 10px;
+}
+
+.ham
+{
+    margin-left: 6px;
+    margin-top: 6px;
+}
+.cross
+{
+    margin-left: 176px;
+    margin-top: 4px;
+}
+
+@media (max-width:958px)
+{
+    .my_pic
+    {
+        display: none;
+    }
+    /* .sidebar
+    {
+        transform:translate(-443px,0px);
+        position: absolute;
+    } */
+}
