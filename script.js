@@ -1,19 +1,29 @@
 console.log("Scripts running....")
-document.querySelector('.cross').style.display='none';
-document.querySelector('.hamburger').addEventListener("click",()=>{
-    document.querySelector('.sidebar').classList.toggle('sidebargo');
-    if(document.querySelector('.sidebar').classList.contains('sidebargo'))
+var cross = document.querySelector('.cross');
+var ham = document.querySelector('.ham');
+var hamburger = document.querySelector('.hamburger');
+var sidebar = document.querySelector('.sidebar');
+var container = document.querySelector('.container');
+cross.style.display='none';
+hamburger.addEventListener("click",()=>{
+    sidebar.classList.toggle('sidebargo');
+    if(sidebar.classList.contains('sidebargo'))
     {
-        document.querySelector('.ham').style.display='inline'
-        document.querySelector('.cross').style.display='none'
+        cross.style.display='none'
+        setTimeout(()=>
+        {
+            ham.style.display = 'inline';
+            container.style.backgroundColor = 'rgba(96, 92, 92, 0)';
+        }, 250);
     }
     else
     {
-        document.querySelector('.ham').style.display='none'
+        ham.style.display='none'
         setTimeout(()=>
         {
-            document.querySelector('.cross').style.display='inline'
-        },300);
+            cross.style.display='inline';
+            container.style.backgroundColor = 'rgba(96, 92, 92, 0.292)';
+        },250);
         
     }
 })

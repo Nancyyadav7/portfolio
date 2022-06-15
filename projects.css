@@ -4,6 +4,10 @@
     padding: 0;
     /* background-color: black; */
 }
+.container{
+    height: 100vh;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -16,7 +20,7 @@ body
 .sidebar {
     z-index: 2;
     font-family: 'Noto Serif', serif;
-    background-color: blanchedalmond;
+    background:linear-gradient(rgba(0,0,0,0.94),rgba(66, 64, 64,0.94),rgba(105, 104, 104,0.94));
     height: 100vh;
     transition: transform 0.3s ease-in;
     position: absolute;
@@ -40,7 +44,7 @@ body
     color:black;
     width: 7.5rem;
     padding: 1rem 1rem;
-    background-color: rgb(255, 204, 128);
+    background:linear-gradient(45deg,#fbfdde,#faebe1,#e5ffef,#ebffff,#ffe2ff,#ffc8e9,#f0e1ff,#ffe3dc,#d3eeff);
     border: 2px solid black;
     box-shadow: 2px 2px black;
     border-radius: 0.4rem;
@@ -48,7 +52,8 @@ body
 }
 .sidebar nav li a:hover
 {
-    background-color: rgb(250, 184, 83);
+    transform: scale(1.07);
+    background:linear-gradient(45deg,#fafcd8,#f9e5d8,#dbfce8,#dcf8f8,#fed7fe,#fbbbe2,#ead8fd,#fddad1,#c4e4f9);
     /* color: rgb(255, 204, 128); */
 }
 .sidebar nav li a:active
